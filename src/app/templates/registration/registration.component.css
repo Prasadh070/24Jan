@@ -1,0 +1,140 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.register {
+    background-color: lightcyan;
+    overflow-x: hidden;
+    --color:#000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+  font-size: xx-large;
+   margin-left: 37%;                 
+
+}
+h1{ 
+  font-size: x-large;
+  justify-content: center;
+  margin-left: 40%;
+}
+.container{
+  max-width: 1100px;
+  width: 90%;
+  margin: 0% auto;
+}
+
+
+.flex2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form{
+  margin: 5rem auto;
+  background: #DBEFEA;
+  padding: 2rem 0;
+  border-radius: 3.5rem 0 3.5rem 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.one, .flex{
+  flex-basis: 48%;
+  font-size: 1rem;
+  margin: 1.2rem;
+}
+
+.two{
+  flex-basis: 33%;
+  font-size: 1.6rem;
+  margin: 1.2rem;
+}
+
+.one legend{
+  margin: 1rem 0;
+  font-size: 1rem;;
+}
+
+#username, #upass, #contactno, #address,#pincode,#employementstatus,#occupation,#workingAddress ,#primarycarePhysician,#preExistingmedicalCondition,#currentMedication,
+#nameofDependent,#reletionwithdependent,#birthdate,#age,#coverageType,#coverageStartdate,#preferedmethodforcommunication,
+#howhereabout{
+  width: 100%;
+  padding: 1.2rem;
+  height: 40px;
+  margin: 1rem 0;
+  border-radius: 1.5rem 0 1.5rem 0;
+  background: #F5f5f5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#DOB{
+  width: 25%;
+  font-size: larger ;
+  
+}
+
+
+.one label, .flex label, .two label{
+  padding: 0 0.8rem;
+  font-size: 1rem;
+}
+
+#username::placeholder, #setpassword::placeholder, #contactno::placeholder, #dateofbirth::placeholder{
+  font-size: 1rem;
+}
+
+.one .gender input{
+  margin: 0 0.2rem;
+}
+
+.flex textarea{
+  width: 100%;
+  height: 100%;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 2.5rem 0 2.5rem 0;
+  background: #F5f5f5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  border: 2px solid #0C8765;
+  display: block;
+  color: #0C8765;
+  font-size: 1rem;
+ margin-top: 3%;
+  margin-right: 10%;
+  text-align: center;
+  border-radius: 1rem 0 1rem 0;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  transition: 0.5s ease-in;
+}
+
+.submit:hover{
+  background-color:#0af92a;
+  color: #f5f5f5;
+}

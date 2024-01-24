@@ -1,0 +1,37 @@
+/* .container{ */
+    /* width: 700px;
+    background-color: lightcyan;
+    height: max-content;
+    
+    margin: 4%;
+   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding:10px;
+     padding-bottom: 10px; 
+     border-radius: 20px; */
+    /* border: 8px solid #223243;  */
+    /* box-shadow: -10px -10px 25px rgba(255, 255, 255, 0.1),
+      10px 10px 25px rgba(0, 0, 0, 0.35),
+      inset -10px -10px 25px rgba(255, 255, 255, 0.1),
+      inset 10px 10px 25px rgba(0, 0, 0, 0.35); */
+    
+/* } */
+h2{
+    margin-top: 2%;
+    margin-left: 40%;
+}
+.height{
+   
+    
+    margin-left: 19%;
+    margin-top: 5%;
+    
+}
+.container{
+    width: 97%;
+    
+   
+    
+}

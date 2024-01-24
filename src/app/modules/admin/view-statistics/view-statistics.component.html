@@ -1,0 +1,60 @@
+<!-- <p>view-statistics works!</p>
+
+
+<h1> Enquiry  DATA</h1>
+<table border="3">
+ <th> ID</th>
+ <th> Name</th>
+ <th> Contact NO</th>
+ <th> Email ID</th>
+ <th>Action</th>
+ 
+
+ <tr *ngFor="let eq of enquiry">
+    <td> {{eq.e_id}}</td>
+    <td>{{eq.e_name}}</td>
+    <td>{{eq.e_contactNo}}</td>
+    <td>{{eq.e_email}}</td>
+    <input type="button" (click)="delete(eq)" value="DELETE">
+
+   </tr>  
+  </table> -->
+
+  
+  
+  <canvas class="my-1 w-100" id="myChart" width="900" height="0"></canvas>
+      
+  <h2>Enquiry Data</h2>
+  <div class="table-responsive">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th>Enquiry ID</th>
+          <th>Name</th>
+          <th>Contact No</th>
+          <th>Email Id</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+       
+       
+        <tr *ngFor="let eq of enquiry" class="table-primary">
+          <td>{{eq.e_id}}</td>
+          <td>{{eq.e_name}}</td>
+          <td>{{eq.e_contactNo}}</td>
+          <td>{{eq.e_email}}</td>
+          <input type="button" (click)="delete(eq)" value="DELETE">
+        </tr>
+        
+      
+   
+      </tbody>
+    </table> 
+   </div> 
+  
+
+
+
+
+

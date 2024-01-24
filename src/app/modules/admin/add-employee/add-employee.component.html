@@ -1,0 +1,174 @@
+
+<div class="space">
+<canvas class="my-1 w-100" id="myChart" width="900" height="0"></canvas>
+      
+<h2>Registration Data</h2>
+
+  <table >
+    <thead>
+      <tr>
+        <th>EnquiryID</th> &nbsp;
+        <th>Username</th> &nbsp;
+        <th>Password</th> &nbsp;
+        <th>Name</th> &nbsp;
+        <th>Gender </th> &nbsp;
+        <th>BirthDate</th> &nbsp;
+        <th>Contact</th> &nbsp; 
+        <th>Address</th> &nbsp;
+        <th>Pincode </th> &nbsp;
+      </tr>
+      </thead>
+     
+      <tbody>
+
+        <tr>
+          <td>1</td> &nbsp;
+          <td>Prasad77</td> &nbsp;
+          <td>Prasad@77</td> &nbsp;
+          <td>Prasad Ashok Hatte</td> &nbsp;
+          <td>Alpha Male</td> &nbsp;
+          <td>09/05/1994</td> &nbsp;
+          <td>9021039916</td> &nbsp;
+          <td>Heritage Palm,Saiful</td> &nbsp;
+          <td>413008</td> &nbsp;
+          </tr>
+          <tr *ngFor="let userr of user" class="table-primary">
+            <td> {{userr.id}}</td>  &nbsp;
+            <td> {{userr.username}}</td> &nbsp;
+            <td> {{userr.setpassword}}</td> &nbsp;
+            <td> {{userr.fullname}}</td> &nbsp;
+            <td> {{userr.gender}}</td> &nbsp;
+            <td> {{userr.dateofbirth}}</td> &nbsp;
+            <td> {{userr.contactno}}</td> &nbsp;
+            <td> {{userr.address}}</td> &nbsp;
+            <td> {{userr.pincode}}</td> &nbsp;
+          </tr>
+      </tbody>
+      </table> <br>
+
+      <table>
+         <thead>
+      
+        <tr>
+         
+           
+          <th>EnquiryID</th> &nbsp;
+           <th>EmployementDetails  </th> &nbsp;
+           <th>Occupation  </th> &nbsp;
+           <th>WorkingAddress </th> &nbsp;
+           <th>PrimarycarePhysician</th> &nbsp;
+           <th>PreExistingmedicalCondition  </th> &nbsp;
+           
+           
+         
+        </tr> 
+        
+    </thead>
+    <tbody>
+      <tr *ngFor="let userr of user" >
+        <td> {{userr.id}}</td> &nbsp;
+        <td> {{userr.ed.employementstatus}}</td> &nbsp;
+        <td> {{userr.ed.occupation}}</td> &nbsp;
+        <td> {{userr.ed.workingAddress}}</td> &nbsp;
+        <td> {{userr.hi.primarycarePhysician}}</td> &nbsp;
+        <td> {{userr.hi.preExistingmedicalCondition}}</td> &nbsp;
+        
+        </tr>
+      <tr>
+      <td>1</td> &nbsp;
+      <td>hsshshhsbhsbhs</td> &nbsp;
+      <td>jsjsjsjjs</td> &nbsp;
+      <td>shshshsh</td> &nbsp;
+      <td>nhsnhshbsh</td> &nbsp;
+      <td>nsjsnhs</td> &nbsp;
+      </tr>
+    </tbody>
+    </table>
+  <table>
+        <thead>
+          <tr>
+            <th>EnquiryID</th> 
+            <th>NameofDependent  </th> 
+            <th>Relationwithdependent  </th> 
+            <th>Birthdate </th> 
+            <th>Age</th> 
+            <th>CoverageType</th> 
+            <th>CurrentMedication</th> 
+           
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr *ngFor="let userr of user" class="table-primary">
+            <td> {{userr.id}}</td> 
+            <td> {{userr.depedentinfomation.nameofDependent}}</td> 
+            <td> {{userr.depedentinfomation.reletionwithdependent}}</td> 
+            <td> {{userr.depedentinfomation.birthdate}}</td> 
+            <td> {{userr.depedentinfomation.age}}</td> 
+            <td> {{userr.ipd.coverageType}}</td> 
+            <td> {{userr.hi.currentMedication}}</td> 
+          
+          </tr>
+          <tr><td>1</td> 
+          <td>jajajaja</td> 
+          <td>nhsbshbsh</td> 
+          <td>xhxxhxhx</td> 
+          <td>jddhddy</td> 
+          <td>kjjsjssss</td>
+           <td>sjusususss</td>
+           </tr>
+        </tbody>
+  
+  </table>
+  <table>
+         <thead>
+          <tr>
+            <th>EnquiryID</th> 
+            <th>CoverageStartdate </th> 
+
+            <th>CommunicationMethod  </th> 
+            <th>Howhereabout  </th> 
+            <th style="color: red;">Action</th> 
+          </tr>
+
+
+         </thead>
+
+         <tbody>
+          <tr *ngFor="let userr of user" >
+            <td> {{userr.id}}</td>
+            <td> {{userr.ipd.coverageStartdate}}</td>  
+            <td> {{userr.addi.preferedmethodforcommunication}}</td> 
+             <td> {{userr.addi.howhereabout}}</td> &nbsp;
+   
+            <td>
+       <input type="button" (click)="delete(userr)" value="DELETE">  
+       <input type="button" (click)="editData(userr)" value="UPDATE"> 
+      </td>
+         </tr>
+         <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>Delete Update
+            
+          </td>
+
+         </tr>
+
+         </tbody>
+
+
+  </table>
+
+  </div>
+
+
+
+       
+       
+
+         
+
+     

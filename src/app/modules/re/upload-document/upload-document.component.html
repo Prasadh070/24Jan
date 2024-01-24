@@ -1,0 +1,38 @@
+<!-- <p>upload-document works!</p> -->
+  
+<form [formGroup]="docFrom" (ngSubmit)="saveDoc()">
+    <pre>
+       docId:<input type="number" formControlName="id" ><br>
+      
+       photo:<input type="file" (change)="onselectphoto($event)"><br>
+        <img [src]="imagePhoto" width="100px" height="100px">
+
+       pancard:<input type="file" (change)="onselectpancard($event)"><br>
+       <img [src]="imagepancard" width="100px" height="100px">
+
+       medical Report:<input type="file" (change)="onselectaadharcard($event)"><br>
+       <img [src]="imageaadharcard" width="100px" height="100px">
+
+       <button type="submit">Save Doc</button>
+    </pre>
+</form>
+
+
+
+
+<table border="2" >
+  <tr>
+    <th>id</th>
+    <th>Photo</th>
+    <th>Pancard</th>
+    <th>Medical Report</th>
+  </tr>
+
+  <tr *ngFor="let d of data">
+    
+    <td>{{d.id}}</td>
+    <td><img [src]="'data:image/jpg;base64,'+d.photo" width="80" height="80"></td>
+    <td><img [src]="'data:image/jpg;base64,'+d.pancard" width="80" height="80"></td>
+    <td><img [src]="'data:image/jpg;base64,'+d.aadhar" width="80" height="80"></td>  
+  </tr>
+</table>

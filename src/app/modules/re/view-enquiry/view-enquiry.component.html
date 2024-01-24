@@ -1,0 +1,38 @@
+<!-- 
+// {{user | json}} -->
+<h1> Registration DATA</h1>
+<table border="2">
+<th> ID</th>
+<th> Name</th>
+<th> setpassword </th>
+<th> fullname</th>
+<th> gender </th>
+<th> dateofbirth</th>
+<th>contactno</th>
+<th> address/th>
+<th> pincode/th>
+<th> contactno</th>
+<th> employementdetails</th>
+<th>Actions</th>
+
+<tr>
+<td> {{user.id}}</td>
+<td> {{user.username}}</td>
+<td> {{user.setpassword}}</td>
+<td> {{user.fullname}}</td>
+<td> {{user.gender}}</td>
+<td> {{user.dateofbirth}}</td>
+<td> {{user.contactno}}</td>
+<td> {{user.address}}</td>
+<td> {{user.pincode}}</td>
+<td> {{user.contactno}}</td>
+<td> {{user.ed.employementstatus}}</td>
+<input type="button" (click)="viewdocument(user)" value="viewdoc">
+
+<!-- <input type="button" (click)="updateData(userr)" value="UPDATE"> -->
+
+
+
+</tr>  
+</table>
+

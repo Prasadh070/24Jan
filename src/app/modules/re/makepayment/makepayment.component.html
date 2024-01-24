@@ -1,0 +1,48 @@
+<!-- <p>registration works!</p> -->
+<div class="container tb-10">
+    <h1 >Payment </h1>
+    
+              <form [formGroup]="payform" (ngSubmit)="makepayment()"> 
+                    <!-- ----------------Start------------------>
+ 
+                  <div >
+                                 
+                              <div class="form-group">
+                                 <label for="uname">Enter policyid</label>
+                              <input type="number" class="form-control" id="id" formControlName="id" placeholder="Enter User policyid">
+                              </div>
+                              
+ 
+                              <div class="form-group">
+                                <label for="fname">Enter amount</label>
+                                <input type="number" class="form-control" id="fname" formControlName="amount" placeholder="amount to pay">
+                             </div>
+                              
+                              <div class="form-group">
+                                 <label for="methodofPayment">methodofPayment</label>
+                                 <select class="form-control" formControlName="methodofPayment">
+                                 
+                                 <option value="Debit card">Debit card</option>
+                                 <option value="Credit card">Credit Card</option>
+                                 <option value="other">Other</option>
+                                 </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="fname">Enter card no</label>
+                                <input type="number" class="form-control" id="fname" formControlName="cardno" placeholder="cardno">
+                             </div>
+                             
+ 
+                              <div class="form-group">
+                              <label for="DOB">Enter date of payment</label>
+                              <input type="date" class="form-control" id="DOB" formControlName="dateofpayment" placeholder=" dateofpayment">
+                           </div>
+
+                           <button type="submit">PAY</button>
+ 
+                            
+            
+           </div>
+           
+ </form>
+                
